@@ -1,0 +1,210 @@
+@import "config"
+
+::selection
+    background red
+    color white
+
+body
+    color: fontc
+    overflow-x: hidden
+a
+    text-decoration: none
+    color: inherit
+
+.red
+            color red
+            
+section 
+    height: 100vh 
+
+nav
+    padding: 20px 50px 
+    display flex
+    align-items center
+    justify-content space-between
+    h1
+        font-size: 30px
+        font-family: Futura
+    .end
+        display flex
+        align-items center
+        justify-content center
+        font-family: SF
+        font-size: 24px
+        .img-li
+            img 
+                width: 27px
+                height: 27px
+                padding 0 10px
+        li
+            a
+                p
+                    font-size: 24px
+                    padding 0 30px
+                    transition: 0.2s color
+                    &:hover
+                        color red
+
+.overflowing-container
+    position relative
+    width: 100%
+    height: 30vh
+    h2
+        z-index -5
+        position absolute
+        top -50px
+        left 0
+        font-size 24vw
+        transform: scale(1.05)
+        transform-origin: center
+        font-family: SF 
+        font-weight: bold
+        opacity 0.05
+        margin: 0 auto
+
+.presentation
+    margin: 0 10vw
+    p
+        white-space pre-line
+        font-size: 80px
+        font-family SF
+        font-weight bold
+        
+
+.scroll
+    font-family: SF 
+    position absolute
+    bottom: 10vh
+    left: 50px
+    transform: rotate(90deg)
+    &::after
+       content ''
+       position absolute
+       bottom -6px
+       left 0
+       width: 50px
+       height 1px
+       background black 
+       transition: 0.2s all
+    &:hover::after
+        width: 80px
+        background red
+
+.title
+    padding: 75px 0 
+    font-size 80px
+    font-family: SF 
+    font-weight: bold
+
+.container
+    margin: 0 10vw
+    max-width: 1440px
+    font-family: SF
+    .title
+        padding: 60px 0 0 0
+    .sheets
+        .project-sheet
+            margin: 100px 0
+            display flex
+            justify-content: space-between
+            .text
+                max-width 720px
+                margin: 0 50px 0 0
+                .title
+                    padding 20px 0
+                .details
+                    display flex
+                    margin: 0 0 20px 0
+                    h4
+                        margin 0 0 10px 0
+                        font-size: 34px
+                        font-weight: bold
+                    p
+                        font-size: 26px
+                        opacity 0.5
+                    .role
+                        margin 0 40px 0 0
+                p
+                    font-size: 26px
+
+                .button
+                    margin: 100px 0 0 0
+                    a
+                        padding: 15px 35px
+                        background red
+                        color white
+                        border-radius 77px
+                        font-size: 21px
+            .images
+                position relative
+                width: 80%;
+                img 
+                    max-width 100%
+                .number
+                    position absolute
+                    font-size: 200px
+                    font-weight: bold
+                    bottom 30px
+                    right -80px
+                    color red
+        .project-sheet
+            &:nth-child(even)
+                flex-direction: row-reverse
+                .text
+                    margin: 0 0 0 50px
+                .number
+                    left -80px
+            &:nth-child(odd)
+                flex-direction: row
+                
+
+
+.project
+    margin: 50px 10vh
+    .cards
+        display flex
+        justify-content center
+        align-items center
+        flex-wrap: wrap
+        color white
+        font-family: SF 
+        font-weight: bold
+        .card
+            border-radius 6px
+            position relative
+            height 500px
+            width: 20%
+            min-width 310px
+            margin: 25px
+            transition 0.2s all
+            &:hover
+                transform: scale(1.05);
+            &.card-1
+                background red
+            &.card-2
+                background red
+            &.card-3
+                background red
+            &.card-4
+                background red
+            .theme
+                text-align: center
+                position absolute
+                top 30px
+                left 0
+                width 100%
+                background fontc
+                font-size: 80px
+            .bottom 
+                position absolute
+                bottom: 0 
+                left 0 
+                white-space: pre-line
+                font-weight: normal
+                font-size: 31px
+                padding 20px
+                box-sizing: border-box
+                width 100%
+                border-bottom-left-radius: 6px
+                border-bottom-right-radius:  6px
+                background fontc

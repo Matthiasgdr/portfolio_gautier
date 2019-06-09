@@ -1,0 +1,311 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v4.0 | 20180602
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+	display: block;
+}
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+    display: none;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'SF';
+  src: url(fonts/bc2adab940eccf10098ddbbfb1399d67.otf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SF';
+  src: url(fonts/c74ac3e41dc35c5dda6a7a8c663da997.otf) format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura';
+  src: url(fonts/ee64fb9d3f1ba2333e1b489283925bce.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+::selection {
+  background: #ff4d5b;
+  color: #fff;
+}
+body {
+  color: #333;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.red {
+  color: #ff4d5b;
+}
+section {
+  height: 100vh;
+}
+nav {
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav h1 {
+  font-size: 30px;
+  font-family: Futura;
+}
+nav .end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: SF;
+  font-size: 24px;
+}
+nav .end .img-li img {
+  width: 27px;
+  height: 27px;
+  padding: 0 10px;
+}
+nav .end li a p {
+  font-size: 24px;
+  padding: 0 30px;
+  transition: 0.2s color;
+}
+nav .end li a p:hover {
+  color: #ff4d5b;
+}
+.overflowing-container {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+}
+.overflowing-container h2 {
+  z-index: -5;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  font-size: 24vw;
+  transform: scale(1.05);
+  transform-origin: center;
+  font-family: SF;
+  font-weight: bold;
+  opacity: 0.05;
+  margin: 0 auto;
+}
+.presentation {
+  margin: 0 10vw;
+}
+.presentation p {
+  white-space: pre-line;
+  font-size: 80px;
+  font-family: SF;
+  font-weight: bold;
+}
+.scroll {
+  font-family: SF;
+  position: absolute;
+  bottom: 10vh;
+  left: 50px;
+  transform: rotate(90deg);
+}
+.scroll::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 50px;
+  height: 1px;
+  background: #000;
+  transition: 0.2s all;
+}
+.scroll:hover::after {
+  width: 80px;
+  background: #ff4d5b;
+}
+.title {
+  padding: 75px 0;
+  font-size: 80px;
+  font-family: SF;
+  font-weight: bold;
+}
+.container {
+  margin: 0 10vw;
+  max-width: 1440px;
+  font-family: SF;
+}
+.container .title {
+  padding: 60px 0 0 0;
+}
+.container .sheets .project-sheet {
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.container .sheets .project-sheet .text {
+  max-width: 720px;
+  margin: 0 50px 0 0;
+}
+.container .sheets .project-sheet .text .title {
+  padding: 20px 0;
+}
+.container .sheets .project-sheet .text .details {
+  display: flex;
+  margin: 0 0 20px 0;
+}
+.container .sheets .project-sheet .text .details h4 {
+  margin: 0 0 10px 0;
+  font-size: 34px;
+  font-weight: bold;
+}
+.container .sheets .project-sheet .text .details p {
+  font-size: 26px;
+  opacity: 0.5;
+}
+.container .sheets .project-sheet .text .details .role {
+  margin: 0 40px 0 0;
+}
+.container .sheets .project-sheet .text p {
+  font-size: 26px;
+}
+.container .sheets .project-sheet .text .button {
+  margin: 100px 0 0 0;
+}
+.container .sheets .project-sheet .text .button a {
+  padding: 15px 35px;
+  background: #ff4d5b;
+  color: #fff;
+  border-radius: 77px;
+  font-size: 21px;
+}
+.container .sheets .project-sheet .images {
+  position: relative;
+  width: 80%;
+}
+.container .sheets .project-sheet .images img {
+  max-width: 100%;
+}
+.container .sheets .project-sheet .images .number {
+  position: absolute;
+  font-size: 200px;
+  font-weight: bold;
+  bottom: 30px;
+  right: -80px;
+  color: #ff4d5b;
+}
+.container .sheets .project-sheet:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.container .sheets .project-sheet:nth-child(even) .text {
+  margin: 0 0 0 50px;
+}
+.container .sheets .project-sheet:nth-child(even) .number {
+  left: -80px;
+}
+.container .sheets .project-sheet:nth-child(odd) {
+  flex-direction: row;
+}
+.project {
+  margin: 50px 10vh;
+}
+.project .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #fff;
+  font-family: SF;
+  font-weight: bold;
+}
+.project .cards .card {
+  border-radius: 6px;
+  position: relative;
+  height: 500px;
+  width: 20%;
+  min-width: 310px;
+  margin: 25px;
+  transition: 0.2s all;
+}
+.project .cards .card:hover {
+  transform: scale(1.05);
+}
+.project .cards .card.card-1 {
+  background: #ff4d5b;
+}
+.project .cards .card.card-2 {
+  background: #ff4d5b;
+}
+.project .cards .card.card-3 {
+  background: #ff4d5b;
+}
+.project .cards .card.card-4 {
+  background: #ff4d5b;
+}
+.project .cards .card .theme {
+  text-align: center;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  background: #333;
+  font-size: 80px;
+}
+.project .cards .card .bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  white-space: pre-line;
+  font-weight: normal;
+  font-size: 31px;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background: #333;
+}
+
+
+/*# sourceMappingURL=style.a306a7c288b9d3dd8906.css.map*/

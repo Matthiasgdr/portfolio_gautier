@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<link href="style.a306a7c288b9d3dd8906.css" rel="stylesheet"></head>
+
+<body>
+    <nav>
+        <h1><a href="index.html" >Gb.</a></h1>
+        <ul class="end">
+                <li class="img-li">
+                        <a href="https://dribbble.com/GautierBurias" target="_blank">
+                            <p>Dribbble</p>
+                            <!--<img src="../static/images/dribbble.png" alt=""> -->
+                        </a>
+                    </li>
+                    <li class="img-li">
+                        <a href="https://www.behance.net/gautierbur7695" target="_blank">
+                            <p>Behance</p>
+                            <!--<img src="../static/images/behance.png" alt=""> -->
+                        </a>
+                    </li>
+                    <li class="img-li">
+                        <a href="https://github.com/Gautier-Burias" target="_blank">
+                            <p>Github</p>
+                            <!--<img src="../static/images/github.png" alt=""> -->
+                        </a>
+                    </li>
+            <!--
+                <a href="">
+                    <p>
+                        Projects
+                    </p>
+                </a>
+            -->
+            <li>
+                <a href="mailto:gautier.burias92@gmail.com">
+                    <p>
+                        Get in touch!
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="title">Code<span class="red">.</span></h1>
+        <div class="sheets">
+            <div class="project-sheet">
+                <div class="text">
+                    <div class="title">Pokédex API</div>
+                    <div class="details">
+                            <div class="role">
+                                <h4>Role</h4>
+                                <p>Coding</p>
+                            </div>
+                            <div class="date">
+                                <h4>Date</h4>
+                                <p>February 2019</p>
+                            </div>
+                        </div>
+                    <p>Using php and the <span class="red">PokeAPI</span>, I made pokedex who display all the pokemons from the 1st generation to the last one.</p>
+                    <div class="button"><a href="https://github.com/Gautier-Burias/Php-Pokemon-API" target="_blank">Go to Github</a></div>
+                </div>
+                <div class="images">
+                    <img src="images/91fd6911baf1c173ecedf54b005dc61f.png" alt="">
+                    <div class="number">01</div>
+                </div>
+            </div>
+            <div class="project-sheet">
+                <div class="text">
+                    <div class="title">Css futuristic interface</div>
+                    <div class="details">
+                            <div class="role">
+                                <h4>Role</h4>
+                                <p>Coding</p>
+                            </div>
+                            <div class="date">
+                                <h4>Date</h4>
+                                <p>February 2019</p>
+                            </div>
+                        </div>
+                    <p>Using Html/Css/Js, I made a css interface with alot of animations on the theme of the future.</p>
+                    <div class="button"><a href="https://github.com/Gautier-Burias/Space-Ecssoplanet" target="_blank">Go to Github</a></div>
+                </div>
+                <div class="images">
+                    <img src="images/e91b7848ae6075ef59e6213721ce2179.png" alt="">
+                    <div class="number">02</div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="bundle.a306a7c288b9d3dd8906.js"></script></body>
+
+</html>
